@@ -1,0 +1,23 @@
+public class Taivanchik {
+
+    public static void main(String[] args) {
+        // vxidni znachenya
+        double a = 38.9;
+        double b = -4.7;
+        double c = 5;
+        double z = 0.8;
+
+        //x za gthdoi formulai
+        double sqrtA = Math.sqrt(a); // Обчислюємо sqrt(a)
+        double numerator = a + (b / (c + sqrtA)); // Чисельник виразу для x
+        double denominator = Math.abs(b - a) + sqrtA; // Знаменник виразу для x
+        double x = numerator / denominator; // Остаточне значення x
+
+        // y za vtaroi
+        double y = Math.exp(-1) + Math.asin(z); // e^-1 + arcsin(z)
+
+        // rezultat (muzicalnoi pauzi ne budet((( tut nechego pet)
+        System.out.println("Значення x = " + x);
+        System.out.println("Значення y = " + y);
+    }
+}
